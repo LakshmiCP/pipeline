@@ -1,4 +1,7 @@
 node {
+ triggers {
+        cron('H 4/* 0 0 1-5')
+   }
    stage ('Clone sources')
    {
     git url: 'https://github.com/cginternals/cmake-init.git' 
